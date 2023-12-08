@@ -7,32 +7,76 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a href="" class="navbar-brand">Logo</a>
+<body style="margin: 10px;">
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barra">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="barra">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Home</a>
+    <!--listas
+    classe na ul: list-group
+    classe na li: list-group-item
+    classe para deixar ativa: active
+    -->
+    <ul class="list-group">
+        <li class="list-group-item">Lista 1</li>
+        <li class="list-group-item">Lista 2</li>
+        <li class="list-group-item">Lista 3</li>
+        <li class="list-group-item">Lista 4</li>
+    </ul>
+    <br><br>
 
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="">home 1</a>
-                        <a class="dropdown-item" href="">home 2</a>
-                    </div>
-                </li>
-            </ul>
-    </div>
-    </nav>
+    <!--listas com classe flush-->
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lista flush 1</li>
+        <li class="list-group-item">Lista flush 2</li>
+        <li class="list-group-item">Lista flush 3</li>
+        <li class="list-group-item">Lista flush 4</li>
+    </ul>
+    <br><br>
+
+    <!--lista de links-->
+    <ul class="list-group">
+        <a class="list-group-item" href="">Lista de link 1</a>
+        <a class="list-group-item" href="">Lista de link 2</a>
+        <a class="list-group-item" href="">Lista de link 3</a>
+        <a class="list-group-item" href="">Lista de link 4</a>
+    </ul>
+    <br><br>
+
+    <!--listas com classes contextuais
+    classe: list-group-item-<opção>
+    opções: primary, secondary, success, info, 
+            warning, danger, light, dark
+    -->
+    <ul class="list-group">
+        <li class="list-group-item">Lista normal</li>
+        <li class="list-group-item list-group-item-primary">Lista primary</li>
+        <li class="list-group-item list-group-item-secondary">Lista secondary</li>
+        <li class="list-group-item list-group-item-success">Lista success</li>
+        <li class="list-group-item list-group-item-info">Lista info</li>
+        <li class="list-group-item list-group-item-warning">Lista warning</li>
+        <li class="list-group-item list-group-item-danger">Lista danger</li>
+        <li class="list-group-item list-group-item-light">Lista light</li>
+        <li class="list-group-item list-group-item-dark">Lista dark</li>
+    </ul>
+    <br><br>
+
+    <!-- badge
+            classe: badge
+            classe: bg-<opção>
+            opções: primary, secondary, success, info, 
+                    warning, danger, light, dark
+     -->
+     <ul class="list-group">
+        <li class="list-group-item">
+            badge primary
+            <span class="badge bg-primary">14</span>
+        </li>
+        <li class="list-group-item">badge secondary</li>
+        <li class="list-group-item">badge success</li>
+        <li class="list-group-item">badge info</li>
+        <li class="list-group-item">badge warning</li>
+        <li class="list-group-item">badge danger</li>
+        <li class="list-group-item">badge light</li>
+        <li class="list-group-item">badge dark</li>
+     </ul>
 
     <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
