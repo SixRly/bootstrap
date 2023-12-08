@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body id="list" style="margin: 10px;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+        <a class="navbar-brand" href="">Bootstrap</a>
+    
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barra">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="barra">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Navbar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="list.html">Listas</a>
+            </li>
+        </ul>
+        <div id="ol">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Navbar</a>  
+            </li>
+            <li class="breadcrumb-item active">Listas</li>
+        </ol>
+    </div>
+    </div>
+    </nav>
+
+    <h1>ACESSE O CÓDIGO PARA VER DETALHES</h1>
+    <br><br>
+
+    <!--listas
+    classe na ul: list-group
+    classe na li: list-group-item
+    classe para deixar ativa: active
+    -->
+    <ul class="list-group">
+        <li class="list-group-item">Lista 1</li>
+        <li class="list-group-item">Lista 2</li>
+        <li class="list-group-item">Lista 3</li>
+        <li class="list-group-item">Lista 4</li>
+    </ul>
+    <br><br>
+
+    <!--listas com classe flush-->
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lista flush 1</li>
+        <li class="list-group-item">Lista flush 2</li>
+        <li class="list-group-item">Lista flush 3</li>
+        <li class="list-group-item">Lista flush 4</li>
+    </ul>
+    <br><br>
+
+    <!--lista de links-->
+    <ul class="list-group">
+        <a class="list-group-item" href="">Lista de link 1</a>
+        <a class="list-group-item" href="">Lista de link 2</a>
+        <a class="list-group-item" href="">Lista de link 3</a>
+        <a class="list-group-item" href="">Lista de link 4</a>
+    </ul>
+    <br><br>
+
+    <!--listas com classes contextuais
+    classe: list-group-item-<opção>
+    opções: primary, secondary, success, info, 
+            warning, danger, light, dark
+    -->
+    <ul class="list-group">
+        <li class="list-group-item">Lista normal</li>
+        <li class="list-group-item list-group-item-primary">Lista primary</li>
+        <li class="list-group-item list-group-item-secondary">Lista secondary</li>
+        <li class="list-group-item list-group-item-success">Lista success</li>
+        <li class="list-group-item list-group-item-info">Lista info</li>
+        <li class="list-group-item list-group-item-warning">Lista warning</li>
+        <li class="list-group-item list-group-item-danger">Lista danger</li>
+        <li class="list-group-item list-group-item-light">Lista light</li>
+        <li class="list-group-item list-group-item-dark">Lista dark</li>
+    </ul>
+    <br><br>
+
+    <!-- badge
+            classe: badge
+            classe: rounded-pill
+            classe: bg-<opção>
+            cor do texto: text-<opção>
+            opções: primary, secondary, success, info, 
+                    warning, danger, light, dark
+     -->
+     <ul class="list-group">
+        <li class="list-group-item">badge primary
+            <span class="badge bg-primary rounded-pill">308</span>
+        </li>
+        <li class="list-group-item">badge secondary
+            <span class="badge bg-secondary rounded-pill">308</span>
+        </li>
+        <li class="list-group-item">badge success
+            <span class="badge bg-success rounded-pill">308</span>
+        </li>
+        <li class="list-group-item">badge info
+            <span class="badge bg-info rounded-pill">308</span>
+        </li>
+        <li class="list-group-item">badge warning
+            <span class="badge bg-warning rounded-pill">308</span>
+        </li>
+        <li class="list-group-item">badge danger
+            <span class="badge bg-danger rounded-pill">308</span>
+        </li>
+        <li class="list-group-item">badge light
+            <span class="badge bg-light rounded-pill text-secondary">308</span>
+        </li>
+        <li class="list-group-item">badge dark
+            <span class="badge bg-dark rounded-pill">308</span>
+        </li>
+     </ul>
+     <br><br>
+
+     <!-- breadcrumb -->
+     <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+     </ol>
+
+     <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Notícias</li>
+     </ol>
+
+     <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="">Notícias</a>
+        </li>
+        <li class="breadcrumb-item active">Mais</li>
+     </ol>
+
+    
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,2 +1,17 @@
-@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+nav.navbar {
+    padding: 10px;
+    margin-bottom: 30px;
+}
 
+.navbar-nav {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+body#list div#ol .breadcrumb-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 405;
+}
