@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body id="forms" style="margin: 10px;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+      
+      
+      
+           <a class="navbar-brand" href="">Bootstrap</a>
+    
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barra">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="barra">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Navbar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="list.html">Listas</a>
+            </li>
+            <li class="nav-item">
+                <a href="forms.html" class="nav-link active">Forms</a>
+            </li>
+        </ul>
+        
+    </div>
+    </nav>
+    <div class="bg-danger borda" id="ol">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                   <a href="index.html">Navbar</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="list.html">Listas</a>
+                </li>
+                <li class="breadcrumb-item active">Forms</li>
+            </ol>
+        </div>
+
+    <h1>ACESSE O CÓDIGO PARA VER DETALHES</h1>
+    <br><br>
+
+        <!-- Formulários 
+            classe: form-control-<opções>
+            opções: sm, lg
+         -->
+         <form>
+            <div class="mb-3">
+                <label for="usuario" class="form-label">Usuário</label>
+                <input class="form-control" type="text" id="usuario" placeholder="Usuário">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input class="form-control" type="email" id="email" placeholder="Seu email">
+                <small class="form-text">Email será validado</small>
+            </div>
+
+            <div class="mb-5">
+                <label  class="form-label" for="estados">Estados</label>
+                <select class="form-select" name="" id="estados">
+                    <option selected>Acre</option>
+                    <option value="1">Alagoas</option>
+                    <option value="2">Amapá</option>
+                    <option value="3">...</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="arquivo">Arquivo</label>
+                <input class="form-control" type="file" name="" id="arquivo">
+            </div>
+
+            <div class="mb-5">
+                <input class="form-control" type="file" name="" id="file">
+                <label class="form-label" for="file">Selecione arquivo</label>
+            </div>
+         </form>
+
+         <!-- formulário inline -->
+         <form class="d-flex gap-2">
+            <input class="form-control" type="text" placeholder="insira seu nome" name="" id="">
+            <input class="form-control" type="email" placeholder="insira seu email">
+            <button class="btn btn-primary" type="submit">Logar</button>
+         </form>
+
+    
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
